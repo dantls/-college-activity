@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>IMC</title>
+</head>
+<body>
+  <div id="content">
+    <div id="geral">
+      <div id="form">
+        <h1>Indíce de massa <br>corporal</h1>
+        <fieldset>
+          <legend>
+            <h2>Dados</h2>
+          </legend>
+          <div id="div-peso">
+            <label for="peso">Peso(KG)</label>
+            <input
+            id="peso"
+            name="peso"
+            type="text"
+            />
+          </div>
+          <div id="div-altura">
+            <label for="altura">Altura(Metro)</label>
+            <input
+            id="altura"
+            name="altura"
+            type="text"
+            />
+          </div>
+
+          <button type="button" onclick="calculaPeso()">
+            Calcular
+          </button>
+          <h2 id="resultado"></h2>
+
+        </fieldset>
+      </div>
+      <div id="table">
+        <table id="playlistTable">
+          <thead>
+            <tr>
+              <th>IMC</th>
+              <th>Condição</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><18,5</td>
+              <td>Baixo Peso</td>
+            </tr>
+
+            <tr>
+              <td>18,5 - 25</td>
+              <td>Peso ideal</td>
+            </tr>
+
+            <tr>
+              <td>25 - 30</td>
+              <td>Sobrepeso</td>
+            </tr>
+
+            <tr>
+              <td>30 - 35</td>
+              <td>Obesidade Grau 1</td>
+            </tr>
+
+            <tr>
+              <td>35 - 40</td>
+              <td>Obesidade Grau 2</td>
+            </tr>
+
+            <tr>
+              <td>>40</td>
+              <td>Obesidade Grau 3</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="./js/funcoes.js"></script>
+</body>
+</html>
